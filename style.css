@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navbar */
+.navbar{
+    width: 100%;
+    height: 10vh;
+    background-color: #000080;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar-isi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 10vh;
+    width: 90%;
+}
+.logo{
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.logo a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    padding: 0px 0px 0px 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+/* responsive */
+@media screen and (max-width:600px){
+    .navbar-isi{
+        transform: scale(0.7);
+        width: 100%;
+    }
+    .menu li{
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width:400px){
+
+}
+/* Navbar */
+
+/* Home banner */
+.home-banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/razvan-chisu-Ua-agENjmI4-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-isi{
+    width: 80%;
+    height: 50vh;
+    text-align: center;
+}
+.home-isi h2{
+    font-size: 50px;
+}
+.home-isi button{
+    padding: 15px;
+    background-color: #000080;
+    color: aliceblue;
+    font-weight: bolder;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.home-isi a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* responsive */
+@media screen and (max-width:600px){
+    .home-banner{
+        padding-top: 25px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .home-isi{
+        transform: scale(0.9);
+        padding-top: 10rem;
+    }
+    .home-isi h2{
+        font-size: 30px;
+    }
+    .home-banner p{
+        font-size: 15px;
+    }
+}
+/* Home Banner */
+
+/* =========================================================== */
+
+/* Konten */
+
+.konten{
+    width: 100%;
+    height: 280vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.konten-utama{
+    width: 92%;
+    height: 260vh;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.kiri{
+    height: 170vh;
+    width: 30%;
+}
+.kanan{
+    width: 75%;
+}
+.kiri-cari {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 20px;
+    height: 5vh;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.kiri-cari-img img{
+    width: 45%;
+}
+.kiri-cari-img{
+    text-align: center;
+}
+.kiri-cari input{
+    border: none;
+    padding: 5px 5px 5px 10px;
+    border-radius: 20px;
+    background: transparent;
+    width: 15rem;
+    font-size: 15px;
+}
+.kiri-kategori-pendidikan{
+    margin-top: 20px;
+    width: 95%;
+    height: 45vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.judul-kiri-kategori-pendidikan{
+    padding: 20px;
+}
+.judul-kiri-kategori-pendidikan h3{
+    margin-bottom: 10px;
+}
+.bawah-judul-kiri-kate-pend{
+    padding: 0px 20px 20px 20px;
+}
+.bawah-judul-kiri-kate-pend ul,li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.bawah-judul-kiri-kate-pend a{
+    text-decoration: none;
+    color: black;
+}
+.kiri-kategori-pekerjaan{
+    margin-top: 20px;
+    width: 95%;
+    height: 45vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.judul-kiri-kategori-pekerjaan{
+    padding: 20px;
+}
+.judul-kiri-kategori-pekerjaan h3{
+    margin-bottom: 10px;
+}
+.bawah-judul-kiri-kate-pek{
+    padding: 0px 20px 20px 20px;
+}
+.bawah-judul-kiri-kate-pek ul,li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.bawah-judul-kiri-kate-pek a{
+    text-decoration: none;
+    color: black;
+}
+.kiri-kategori-kota{
+    margin-top: 20px;
+    width: 95%;
+    height: 45vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.judul-kiri-kategori-kota{
+    padding: 20px;
+}
+.judul-kiri-kategori-kota h3{
+    margin-bottom: 10px;
+}
+.bawah-judul-kiri-kate-kota{
+    padding: 0px 20px 20px 20px;
+}
+.bawah-judul-kiri-kate-kota ul,li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.bawah-judul-kiri-kate-kota a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Konten Kanan */
+.kanan-konten{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.kanan-card-img img{
+    width: 100%;
+}
+.kanan-card{
+    width: 49%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0px 0px 20px 20px;
+}
+.kanan-card-ket{
+    padding: 20px 20px 30px 20px;
+}
+.kanan-card-ket button{
+    border: none;
+    background-color: #000080;
+    color: white;
+    font-weight: bolder;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.judul-card{
+    font-weight: bolder;
+}
+.kanan-card-ket a{
+    text-decoration: none;
+    color: black;
+}
+.kanan-card-ket p{
+    margin-bottom: 10px;
+}
+.pagination {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+/* Responsive konten */
+
+@media screen and (max-width:600px){
+    .konten{
+        width: 100%;
+        /* blablabla */
+        height: 540vh;
+    }
+    .konten-utama{
+        flex-direction: column-reverse;
+        height: 520vh;
+    }
+    .kiri{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .kanan{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .kanan-konten{
+        flex-direction: column;
+    }
+    .kanan-card{
+        width: 100%;
+    }
+    .kiri-cari-form{
+        width: 100%;
+    }
+    .kiri-cari-img {
+        width: 100%;
+    }
+    .kiri-kategori-pendidikan{
+        height: 40vh;
+        width: 100%;
+    }
+    .kiri-kategori-pekerjaan{
+        height: 40vh;
+        width: 100%;
+    }
+    .kiri-kategori-kota{
+        height: 40vh;
+        width: 100%;
+    }
+}
+/* Konten end */
+
+/* Footer */
+.footer{
+    width: 100%;
+    height: 40vh;
+    background-color: #000080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.footer-isi{
+    text-align: center;
+}
+.footer-menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.footer-sosmed img{
+    width: 2%;
+    padding: 10px;
+}
+.footer-sosmed{
+    padding: 10px;
+}
+.cr{
+    color: white;
+}
+/* Footer */
+
+/* footer Responsive */
+@media screen and (max-width:600px){
+    .footer{
+        height: 30vh;
+    }
+    .footer-isi{
+        width: 90%;
+    }
+    .footer-sosmed img{
+        width: 5%;
+    }
+}
+
+/*  */
