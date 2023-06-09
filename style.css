@@ -195,6 +195,7 @@ html{
     color: black;
 }
 .kiri-kategori-pekerjaan{
+    overflow: scroll;
     margin-top: 20px;
     width: 95%;
     height: 45vh;
@@ -221,6 +222,7 @@ html{
 }
 .kiri-kategori-kota{
     margin-top: 20px;
+    overflow: scroll;
     width: 95%;
     height: 45vh;
     background-color: white;
@@ -297,9 +299,9 @@ html{
   }
   
   .pagination a.active {
-    background-color: #4CAF50;
+    background-color: #000080;
     color: white;
-    border: 1px solid #4CAF50;
+    border: 1px solid #000080;
   }
   
   .pagination a:hover:not(.active) {background-color: #ddd;}
@@ -339,19 +341,29 @@ html{
         height: 40vh;
         width: 100%;
     }
+    .bawah-judul-kiri-kate-pend li{
+        margin-top: 5px;
+    }
     .kiri-kategori-pekerjaan{
         height: 40vh;
         width: 100%;
     }
+    .bawah-judul-kiri-kate-pek li {
+        margin-top: 5px;
+    }
     .kiri-kategori-kota{
         height: 40vh;
         width: 100%;
+    }
+    .bawah-judul-kiri-kate-kota li{
+        margin-top: 5px;
     }
 }
 /* Konten end */
 
 /* Footer */
 .footer{
+    margin-top: 20px;
     width: 100%;
     height: 40vh;
     background-color: #000080;
@@ -399,3 +411,150 @@ html{
 }
 
 /*  */
+
+/* =============================================================== */
+/* Post.Html Start here */
+.post{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.post-utama{
+    width: 90%;
+    margin-top: 8rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.post-kiri{
+    width: 68%;
+}
+.post-kanan{
+    width: 30%;
+}
+.post-judul{
+    width: 90%;
+    font-size: 20px;
+}
+.post-kategori{
+    margin-top: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 20px;
+}
+.post-kategori a{
+    text-decoration: none;
+    color: blue;
+}
+.post-kategori-kat{
+    padding: 10px 10px 10px 0px;
+}
+.post-img img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+.post-kategori-sosmed img{
+    width: 5%;
+    padding-left: 10px;
+}
+.post-kategori-sosmed{
+    padding-top: 8px;
+}
+.post-judul-kanan{
+    font-size: 20px;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.post-kanan-card-img img{
+    width: 100%;
+}
+.post-kanan-card{
+    padding-top: 20px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0px 0px 20px 20px;
+}
+.post-kanan-card-ket{
+    padding: 20px 20px 30px 20px;
+}
+.post-kanan-card-ket button{
+    border: none;
+    background-color: #000080;
+    color: white;
+    font-weight: bolder;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.post-judul-card{
+    font-weight: bolder;
+}
+.post-kanan-card-ket a{
+    text-decoration: none;
+    color: black;
+}
+.post-kanan-card-ket p{
+    margin-bottom: 10px;
+}
+.post-kiri-kategori-pekerjaan{
+    overflow: scroll;
+    margin-top: 20px;
+    width: 100%;
+    height: 45vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.post-judul-kiri-kategori-pekerjaan{
+    padding: 20px;
+}
+.post-judul-kiri-kategori-pekerjaan h3{
+    margin-bottom: 10px;
+}
+.post-bawah-judul-kiri-kate-pek{
+    padding: 0px 20px 20px 20px;
+}
+.post-bawah-judul-kiri-kate-pek ul,li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.post-bawah-judul-kiri-kate-pek a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Responssive Here */
+
+@media screen and (max-width:600px){
+    .post-utama{
+        flex-direction: column;
+    }
+    .post-kiri{
+        width: 100%;
+    }
+    .post-judul{
+        width: 100%;
+    }
+    .post-kategori{
+        width: 100%;
+    }
+    .post-kategori-sosmed img{
+        width: 20%;
+    }
+    .post-img img{
+        width: 100%;
+    }
+    .post-kanan{
+        width: 100%;
+        padding-top: 20px;
+    }
+}
